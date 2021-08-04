@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    background: rgb(188, 138, 105); 
+    font-family: 'Tahoma';
+    font-weight: 100;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #630d0d;
+}
+
+header::after {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    max-width: 20%;
+    height: auto; 
+}
+
+nav{
+    float: left; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*lines up the navigation options*/
+nav li {
+    display: inline-block;
+    margin-left: 100px; 
+    padding-top: 15%;
+
+    position: relative;
+}
+/*Text style*/
+nav a{
+    color:#FFF;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+/*When user hovers over navigation options, turns black indicating so*/
+nav a:hover {
+    color: #000;
+}
+
+/*When user hovers over a bar loads ontop as they are about to click*/
+nav a::before { 
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color:#FFF;
+
+    position: absolute;
+    top:100;
+    width:0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.margCap{
+    font-size:15px;
+    float:inline-start;
+    color:#000;
+    text-decoration:none;
+    position:absolute;
+    top:43%;
+}
+
+/*Pizza images placement and size*/
+.marg{
+    float:left;
+    width:20%;
+    height:auto;
+}
+.margCap{
+    font-size:15px;
+    float:inline-start;
+    color:#000;
+    text-decoration:none;
+    position:absolute;
+    top:43%;
+    padding-left: 2%;
+}
+
+.tikka{
+    float:left;
+    width: 21%;
+    height:auto;
+    padding-left: 2%;
+}
+.tikkaCap{
+    font-size:15px;
+    float:inline-start;
+    color:#000;
+    text-decoration:none;
+    position:absolute;
+    top:43%;
+    padding-left: 2%;
+}
+
+.sea{
+    float:left;
+    width: 24%;
+    height:auto;
+    padding-left: 2%;
+}
+.seaCap{
+    font-size:15px;
+    float:inline-start;
+    color:#000;
+    text-decoration:none;
+    position:absolute;
+    top:43%;
+    padding-left: 2%;
+}
+
+.bbq{
+    float:left;
+    width: 24%;
+    height:auto;
+    padding-left: 2%;
+}
+.bbqCap{
+    font-size:15px;
+    float:inline-start;
+    color:#000;
+    text-decoration:none;
+    position:absolute;
+    top:43%;
+    padding-left: 2%;
+}
+
+
